@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <div class="flex justify-center align-middle bg-gray-600 ">
+        <h1 class="text-slate-950 font-bold text-7xl p-2 pb-2 ">TASK MANAGER</h1>
+    </div>
+
+    <div class="flex flex-col border rounded border-blue-800 m-2 h-screen bg-blue-50 lg:flex-row  ">
+
+        <div class=" lg:w-1/2 ">
+
+            <div class=" border bg-gradient-to-r h-fit from-slate-900 via-slate-800 to-slate-900 rounded m-1 flex flex-col justify-center items-center lg:h-1/3 ">
+                <div id="date" class="text-lg text-white"></div>
+                <div id="clock" class="text-9xl text-white font-bold mb-2"></div>
+            </div>
+
+            <div class="border flex  bg-gray-400 rounded m-1 justify-center  lg:flex lg:h-96 p-3">
+
+                <div class="w-1/2  overflow-y-auto ">
+                    <h2 class="text-xl font-bold  ">Pending Tasks</h2>
+                    <ul id="taskList" class="list-none p-2 mt-2 border bg-white rounded shadow"></ul>
+                </div>
+
+
+                <div class="w-1/2 ml-4 overflow-y-auto">
+                    <h2 class="text-xl font-bold  ">Completed Tasks</h2>
+                    <ul id="completedList" class="list-none p-2  mt-2 border bg-white rounded shadow"></ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="border bg-blue-300 flex flex-col mt-4 m-1 rounded  lg:w-1/2">
+            <div class="text-lg font-medium m-4 mb-0">Enter task</div>
+            <input type="text" name="" placeholder="Enter Your Task " class="p-2 m-4 rounded" id="taskInput">
+            <button type="submit" onclick="addTask()"
+                class=" m-4 mt-0 border bg-blue-500 w-fit rounded-3xl p-2 hover:bg-blue-600 text-white font-medium">Add
+                Task</button>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
